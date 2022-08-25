@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Seletores</title>
+		<!--jQyery-->
+		<script src="jquery-3.6.0.min.js"></script>
+
+		<!--Script-->
+		<script>
+			// Ao carregar o documento
+			$(document).ready(function(){
+
+				// Variáveis
+				// No JavaScript: .value, No jQuery: .val() -> Utilizado em formulários
+				var campo = $("input").val();
+				// No JavaScript: .innerHTML, No jQuery: .html() -> Utilizado em IDs e Classes
+				var titulo = $("#titulo").html();
+				var subtitulo = $(".subtitulo").html();
+
+				// Exibir
+				alert(campo);
+				alert(titulo);
+				alert(subtitulo);
+			});
+		</script>
+	</head>
+
+	<body>
+		<input type="text" value="campo Nome">
+		<h1 id="titulo">Título em H1</h1>
+		<h2 class="subtitulo">Título em H2</h2>
+	</body>
+</html>
